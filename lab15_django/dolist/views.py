@@ -19,5 +19,4 @@ def addTodoitem(request):
     if form.is_valid():
         new_todo = Todolist(text = request.POST['text'])
         new_todo.save()
-        
     return redirect('index')
